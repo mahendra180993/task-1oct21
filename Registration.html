@@ -1,0 +1,56 @@
+<!DOCTYPE html>  
+<html>  
+<head> 
+<title>Registeration Form</title>   
+<link rel="stylesheet" type="text/css" href="registrationcss.css"> 
+<script src="regjs.js"></script>
+</head>  
+<body>  
+<form>  
+  <div class="form-start">  
+      <center> <h1> Student Registeration Form</h1> </center> 
+      
+      <hr style="width:100%;text-align:center;margin-left:15px;background-color: red;">  
+      <label class="">Full NAME : <span>*</span> </label>
+        <input type="text" placeholder="Enter Your Full Name"  id="fname" ></label>
+        <p id="msg"></p>
+      <label>Phone :  <span>*</span></label>  
+        <input type="text" placeholder="phone no." id="ph"  size="10" required> 
+        <p id="msg1"></p>
+      <label ><b>Email:</b> <span>*</span></label>  
+        <input type="text" placeholder="Enter Email" id="mail" required>  
+        <p id="msg2"></p>
+      <label><b>Set Password</b> <span>*</span></label>  
+        <input type="password" placeholder="Set Password" name="psw"  id="pwd" required> 
+        <p id="msg3"></p> 
+      <label class="" ><b>Re-Enter Password</b> <span>*</span></label>  
+        <input type="password" placeholder="ReEnter Password" name="psw-repeat" id="cpwd" required> 
+        <p id="msg4"></p>
+        <p id="msg5"></p>
+    <div>  
+      <label>Course : <span>*</span> </label>   
+            <select>  
+            <option value="Course">Course</option>  
+            <option value="BCA">BCA</option>  
+            <option value="BBA">BBA</option>  
+            <option value="B.Tech">B.Tech</option>  
+            <option value="MBA">MBA</option>  
+            <option value="MCA">MCA</option>  
+            <option value="M.Tech">M.Tech</option>  
+            </select>  
+    </div>  
+    <div>  
+      <label>Gender : <span>*</span> </label><br>  
+        <input type="radio" value="Male" name="gender"  > Male   
+        <input type="radio" value="Female" name="gender" > Female   
+        <input type="radio" value="Other" name="gender" > Other 
+        <p id="msg6"></p> 
+    </div>    
+      <label>Address : </label> 
+        <textarea cols="80" rows="5" placeholder="Current Address" value="address" required></textarea> 
+        <input type="checkbox" id="check"> Accept Terms and conditions 
+        <p id="msg7"></p>
+    <center><button type="submit" class="registerbtn" onclick="return Validationreg()">Register</button>
+    <p id="msg8"></p></center>
+</body>  
+</html>
