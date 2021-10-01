@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="logincss.css"> 
+        <script src="loginjs.js"></script>
+    </head>
+    <body>
+        <div >
+            <center>
+           <h2 class="main-title">C360 <span style="color: #e9204f;">Software</span></h2>
+        </div>
+        <div class="main-div-login">
+            <div class="login-boderup-style"></div>
+            
+            <h2 class="header-login">Log in</h2>
+          
+            <form class="form-login">
+              <p><input type="email" placeholder="EMAIL" id="email" style="color:white" ></p>
+              <p id="msg"></p>
+              <p><input type="password"  placeholder="PASSWORD" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="pwd" name="pwd" required></p>
+              <p id="msg1"></p>
+              <p  style="color: white;">Please use atlest one<span style="color: red;"><b>Capital(Uppercase)</b></span>,one <span  style="color: red;"><b>Lowercase</b></span>
+                ,one <span  style="color: red;"><b>Number</b></span> & must and should <span  style="color: red;"><b>Minimum 8 characters</b></span></p>
+              <p id="msg1"></p>
+              <p><center><a href="#" class="fp-style">Forget Password ?</a></center></p>
+              <p><input type="submit" value="Log in" onclick="loginval()"></p>
+              <p id="msg2" style="text-align: center;"></p>
+            </form></center>
+        </div>
+    </body>
+</html>
